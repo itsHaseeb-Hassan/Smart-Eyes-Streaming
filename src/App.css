@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+*{
+  margin: 0px;
+  padding:0px;
+  overflow-x: hidden;
+  background-color: #1F557D;
+}
+.login-div{
+  width:700px;
+  border:1px solid gray;
+  border-radius: 10px;
+  height:400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+.forgot-div{
+  width:700px;
+  border:1px solid gray;
+  border-radius: 10px;
+  height:300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+.input{
+  width:50%;
+  height:50px;
+  margin: auto;
+}
+/* Firefox */
+.input[type=number] {
+  --moz-appearance: textfield;
+}
+.link{
+  font-size: 20px;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* sidebar css code */
+.sidebar.open {
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+}
+/* Sidebar closed state */
+.sidebar.closed {
+  transform: translateX(0);
+}
+
+/* Modify the existing classes */
+.bars-open {
+  margin-left: 310px;
+}
+
+.bars-closed {
+  margin-left: 0;
+}
+.list-style{
+  text-decoration: none;
+  font-size: 25px;
+  color:rgb(103, 85, 85);
+  font-weight: 100;
+}
+.sidebar-list{
+  border-bottom: 1px solid orange;
+  padding:10px 0px;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+/* Other styles remain the same */
+.icon {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 100px;
+  background-color: transparent;
+  z-index: 1;
+  /* margin-left: 250px; */
+}
+.fa-bars{
+  padding: 10px;
+  height:50px;
+  background-color: transparent;
+}
+.bg {
+  height: 100vh;
+  width: 300px;
+  background-color: aliceblue;
+  margin-left: -12px;
+  position: fixed;
+}
+.sidebar ul{
+  position: absolute;
+  background-color: aliceblue;
+}
+ul>li{
+  background-color: aliceblue;
+  font-size: 20px;
+  line-height: 3;
+}
+.footer {
+  position: absolute; 
+  bottom: 100px; 
+  left: 30px; 
+  background-color: orange;
+}
+.logout-btn{
+  width:200px;
+  height:60px;
+  background-color: orange;
+}
+.footer p{
+  font-size: 18px;
+  position: absolute;
+}
+.bar{
+  border:2px solid gray;
+  height:62px;
+  margin-top: 50px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.first-box{
+  border:2px solid gray;
+  border-radius: 10px;
+  width:500px;
+  height:170px;
+}
+.second-box{
+  margin-left:50px;
+  border:2px solid gray;
+  border-radius: 10px;
+  width:700px;
+}
+.image-avatar{
+  width:100px;
+  height:100px;
+  background-color: orange;
+}
+/* mobile devices media query */
+@media  screen and (max-width:480px) {
+  .login-div{
+    width:90%;
+  }
+  .input{
+    width:90%;
+  }
+}
+/*  ipad tablet media query*/
+@media  screen and (max-width:768px) {
+  .login-div{
+    width:90%;
+  }
+  .input{
+    width:90%;
+  }
+  .bars-open {
+    margin-left: 0;
+  }
+  .bars-closed {
+    margin-left: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* small screen laptop */
+@media  screen and (max-width:1024px) {
+  .login-div{
+    width:90%;
   }
-  to {
-    transform: rotate(360deg);
+  .input{
+    width:90%;
+  }
+}
+/* Desktop large screen */
+@media  screen and (max-width:1200px) {
+  .login-div{
+    width:90%;
+  }
+  .input{
+    width:90%;
   }
 }
