@@ -3,6 +3,10 @@ import FormInput from '../components/FormInput'
 import FormButton from '../components/FormButton'
 import { Link } from 'react-router-dom'
 const VerificationPageScren = () => {
+  const styles={
+    width:'50%',
+    margin:'auto',
+}
   return (
     <div>
          <div className='text-center mt-5'>
@@ -14,7 +18,9 @@ const VerificationPageScren = () => {
             <div className="col-lg-12 col-md-12 col-sm-12">
                     <div className="col-lg-12">
                         <form>
-                            <FormInput text="Enter Your Verification Code" type="number"/>
+                        <div className="form-group mt-2 text-center">
+                            <FormInput text="Enter Your Verification Code" type="number" styles={styles}/>
+                            </div>
                             <Link to="/ChangePassword">
                           <FormButton text="Confirm" />
                           </Link>

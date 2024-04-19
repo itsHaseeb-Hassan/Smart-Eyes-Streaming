@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import FormInput from '../components/FormInput'
 import FormButton from '../components/FormButton'
 const LoginPageScreen = () => {
+    const styles={
+        width:'50%',
+        margin:'auto',
+        height:'40px',
+    }
+const[email,setEmail]=useState('')
+const[password,setPassword]=useState('')
+const handelSubmit=(e)=>{
+    e.preventDefault()
+    console.log(email,password);
+}
   return (
      <div>
         <div className='text-center mt-5'>
@@ -13,9 +24,13 @@ const LoginPageScreen = () => {
         <p className='text-center text-warning fs-3 border-bottom border-secondary'> ADMIN PANEL </p> 
             <div className="col-lg-12 col-md-12 col-sm-12">
                     <div className="col-lg-12">
-                        <form>
-                            <FormInput text="Enter Your Email" type="email"/>
-                      <FormInput text="Enter Your Password" type="password"/>
+                        <form onSubmit={handelSubmit}>
+                        <div className="form-group mt-2 text-center">
+                            <FormInput text="Enter Your Email" type="email" styles={styles} onChange={(e)=>setEmail(e.target.value)}/>
+                            </div>
+                            <div className="form-group mt-2 text-center">
+                      <FormInput text="Enter Your Password" type="password" styles={styles} onChange={(e)=>setPassword(e.target.value)}/>
+                      </div>
 
                           <FormButton text="Login" />
                                 <div className='mt-3'>

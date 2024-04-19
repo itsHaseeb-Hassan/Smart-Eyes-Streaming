@@ -1,0 +1,27 @@
+[
+    {   
+        "id":"0",
+        "Camera_Name":"Cam",
+        "Location":"Office"
+    },
+    {
+        "id":"1",
+        "Camera_Name":"Corridor",
+        "Location":"Office"
+    },
+    {
+        "id":"2",
+        "Camera_Name":"Dining Room",
+        "Location":"Home"
+    },
+    {
+        "id":"3",
+        "Camera_Name":"Entrance",
+        "Location":"Factory"
+    },
+    {
+        "id":"4",
+        "Camera_Name":"Bed Room",
+        "Location":"Home"
+    }
+]

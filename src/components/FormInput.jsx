@@ -1,13 +1,15 @@
 import React from 'react'
 
-const FormInput = ({type,text}) => {
+const FormInput = ({type,text,styles,onChange,name}) => {
   return (
-    <div>
-        <div className="form-group mt-2 text-center">
-                                <label className="form-control-label text-white fs-6 ">{text}</label>
-                                <input type={type} className="form-control input"/>
-                            </div>
-    </div>
+    // <div>
+    //     <label className="form-control-label text-white fs-6 ">{text}</label>
+    //      <input type={type} className="form-control input"/>
+    //       </div>
+    <div className="mb-0">
+  <label  className="form-label text-white fs-6 mt-2">{text}</label>
+  <input type={type} className="form-control" name={name} style={styles} onChange={onChange}/>
+</div>
   )
 }
 

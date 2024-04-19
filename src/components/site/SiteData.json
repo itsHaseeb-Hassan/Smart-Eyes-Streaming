@@ -1,0 +1,27 @@
+[
+    {   
+        "id":"0",
+        "Site_Name":"Office",
+        "Cameras":"20"
+    },
+    {
+        "id":"1",
+        "Site_Name":"Home",
+        "Cameras":"8"
+    },
+    {
+        "id":"2",
+        "Site_Name":"Factory",
+        "Cameras":"21"
+    },
+    {
+        "id":"3",
+        "Site_Name":"Street",
+        "Cameras":"15"
+    },
+    {
+        "id":"4",
+        "Site_Name":"Others",
+        "Cameras":"20"
+    }
+]

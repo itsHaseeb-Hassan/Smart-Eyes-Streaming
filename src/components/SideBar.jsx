@@ -17,10 +17,11 @@ const SideBar = ({isOpen,setIsOpen}) => {
                 <li className='fs-1 text-warning'>
                   SMARTEYES
                 </li>
-                <Link className='list-style' to="/"><li className='sidebar-list'>Dashboard</li></Link>
-                <Link className='list-style' to="/Forgot"><li className='sidebar-list'>Sites</li></Link> 
-                <Link className='list-style'><li className='sidebar-list'>Camera</li></Link>
-                <Link className='list-style'><li className='sidebar-list'>LiveStream</li></Link>
+      
+                <Link className='list-style' to="/Dashboard"> <li className='sidebar-list'>Dashboard</li></Link>
+                <Link className='list-style' to="/Site"><li className='sidebar-list'>Sites</li></Link> 
+                <Link className='list-style' to="/Camera"><li className='sidebar-list'>Camera</li></Link>
+                <Link className='list-style' to="/LiveStreaming"><li className='sidebar-list'>LiveStream</li></Link>
                 <Link className='list-style'><li className='sidebar-list'>License</li></Link> 
                 <Link className='list-style' to="/Account"><li className='sidebar-list'>My Account</li></Link> 
               </ul>

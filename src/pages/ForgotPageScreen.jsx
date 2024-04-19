@@ -3,6 +3,10 @@ import FormInput from '../components/FormInput'
 import FormButton from '../components/FormButton'
 import { Link } from 'react-router-dom'
 const ForgotPageScreen = () => {
+  const styles={
+    width:'50%',
+    margin:'auto',
+}
   return (
     <div>
          <div className='text-center mt-5'>
@@ -14,7 +18,9 @@ const ForgotPageScreen = () => {
             <div className="col-lg-12 col-md-12 col-sm-12">
                     <div className="col-lg-12">
                         <form>
-                            <FormInput text="Enter Your Email" type="email"/>
+                        <div className="form-group mt-2 text-center">
+                            <FormInput text="Enter Your Email" type="email" styles={styles}/>
+                            </div>
                             <Link to="/Verification" className='text-decoration-none'>
                           <FormButton text="Send Code For Verification" />
                           </Link>
