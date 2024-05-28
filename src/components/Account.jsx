@@ -5,7 +5,7 @@ const Account = () => {
   return (
     <div className="container-fluid mt-5">
       <div className="row w-100 ">
-        <div className="col-sm-12 col-md-6 first-box ms-5 d-flex">
+        <div className="col-sm-12 col-md-6 first-box  d-flex">
           <div className='mt-3' style={{width:"300px"}}>
             <div className='d-flex'>
                <img src={`images/avatar.png`} className='image-avatar rounded-circle' />

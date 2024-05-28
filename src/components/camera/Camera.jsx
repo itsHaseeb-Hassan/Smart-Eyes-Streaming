@@ -10,7 +10,7 @@ const Camera = () => {
             cameraData.map((item,id)=>{
                return(
                 <>
-                <div className="site-boxes mt-5 ms-5" key={id}>
+                <div className="site-boxes mt-5 " key={id}>
                 <i className="fa fa-pencil text-success fs-5 d-flex justify-content-end site-icon"></i>
                     <p className='p-0 m-0 ms-5 text-white fs-4 site-paragraph'>{item.Camera_Name}</p>
                     <span className='p-0 m-0 ms-5 text-white site-span'>Location:{item.Location}</span>

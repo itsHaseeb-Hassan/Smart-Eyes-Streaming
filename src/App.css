@@ -59,7 +59,7 @@ input::-webkit-inner-spin-button {
 
 /* Modify the existing classes */
 .bars-open {
-  margin-left:280px;
+  margin-left:250px;
 }
 
 .bars-closed {
@@ -96,7 +96,7 @@ input::-webkit-inner-spin-button {
 }
 .bg {
   height: 100vh;
-  width: 300px;
+  width: 250px;
   background-color: aliceblue;
   margin-left: -12px;
   position: fixed;
@@ -112,7 +112,7 @@ ul>li{
 }
 .footer {
   position: absolute; 
-  bottom: 100px; 
+  bottom: 10px; 
   left: 30px; 
   background-color: orange;
 }
@@ -175,7 +175,7 @@ ul>li{
   background-color: rgb(8, 92, 131);
   border:2px solid rgb(128, 128, 128);
   height:200px;
-  width:265px;
+  width:250px;
   border-radius: 10px;
 }
 .site-boxes>.site-paragraph,.site-span,.site-icon{

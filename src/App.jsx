@@ -1,4 +1,5 @@
-import './App.css';
+import React from 'react'
+import './App.css'
 import ForgotPageScreen from './pages/ForgotPageScreen';
 import LoginPageScreen from './pages/LoginPageScreen';
 import { Routes,Route } from 'react-router-dom';
@@ -14,9 +15,12 @@ import AddCamera from './components/camera/AddCamera';
 import Dasboard from './components/Dasboard';
 import LiveStreaming from './components/LiveStreaming';
 import SignupPageScreen from './pages/SignupPageScreen';
+
 function App() {
+
   return (
-    <div>
+    <>
+     <div>
       <Routes>
     <Route exact  path="/" element={<HomePageScreen />}>
       <Route path="/Dashboard" element={<Dasboard />} />
@@ -36,7 +40,8 @@ function App() {
       </Routes>
      
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App

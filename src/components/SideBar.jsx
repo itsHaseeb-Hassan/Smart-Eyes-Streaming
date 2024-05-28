@@ -14,7 +14,7 @@ const SideBar = ({isOpen,setIsOpen}) => {
           <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
             <div className="bg">
               <ul>
-                <li className='fs-1 text-warning'>
+                <li className='fs-3 text-warning ms-4'>
                   SMARTEYES
                 </li>
       

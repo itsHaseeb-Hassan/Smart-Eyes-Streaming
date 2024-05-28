@@ -61,9 +61,9 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="bar d-flex text-white me-5 ms-5">
+      <div className="bar d-flex text-white me-2">
         <p className='fs-4 ms-2 mt-2 mb-1'>
-          {displayPath}
+          {displayPath ? displayPath:"Dashboard"}
         </p>
         <p className='mt-2 fs-4 me-3 mb-1 date'>{moment().format('llll')}</p>
       </div>
