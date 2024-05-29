@@ -265,18 +265,28 @@ ul>li{
   .input{
     width:90%;
   }
+  .first-box {
+    width: 100%!important;
+  }
+  .second-box{
+    margin-left:0px !important;
+    margin-top: 20px;
+  }
 }
 /* Desktop large screen */
-@media  screen and (max-width:1360px) {
+@media  screen and (max-width:1368px) {
   .login-div{
     width:90%;
   }
   .input{
     width:90%;
   }
+  .first-box {
+    width: 40%;
+  }
   .second-box{
-    margin-left:0px !important;
-    margin-top: 20px;
+    margin-left:3px !important;
+    margin-right: 10px;
   }
   .site-sbox{
     margin-left:0px !important;

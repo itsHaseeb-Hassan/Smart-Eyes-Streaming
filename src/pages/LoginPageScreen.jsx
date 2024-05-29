@@ -17,7 +17,7 @@ const handelSubmit=(e)=>{
   return (
      <div>
         <div className='text-center mt-5'>
-  <img src="images/smarteyes.png" className='mt-5' alt="" srcset="" />
+  <img src="images/smarteyes.png"  alt="" srcset="" />
   </div>
          <div className="container login-div border-secondary">
         <div className="row">
